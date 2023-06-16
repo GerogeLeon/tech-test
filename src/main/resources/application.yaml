@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: tech-test
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres?options=-c%20timezone%3DAsia%2FShanghai
+  mvc:
+    format:
+      date-time: iso
+mybatis:
+  #  configuration:
+  #    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapperxml/**/*.xml
+
+logging:
+  level:
+    com.example.techtest: debug
